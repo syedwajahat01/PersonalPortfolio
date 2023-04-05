@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import "../css/main.css";
 import DownloadRoundedIcon from "@mui/icons-material/DownloadRounded";
 import { Button } from "@material-ui/core";
@@ -14,14 +15,15 @@ export const Home = () => {
   return (
     <>
       <div className="homepage">
-        <div className="row home " style={{display:'flex'}}>
-          <div className="col-6 mt-5 txt">
+        <div className="home row " id="homeMain" style={{display:'flex'}}>
+
+          <div className=" mt-5 txt col-6 margin0rem">
             <h1 className="mainHeading ">
               Hi, I'm
               <span className="name ">Wajahat</span>
             </h1>
             <p className="context txtanimation ">
-              I Develop <br /> Interactive User Interfaces & WebApps
+              I Develop<br />Interactive User Interfaces & WebApps
             </p>
 
             <div className="mt-4">
@@ -78,8 +80,8 @@ export const Home = () => {
 
           </div>
 
-          <div className="col-6 mt-5 img">
-          <img  src="personCoding.png"/> 
+          <div className="mt-5 img col-6 margin0rem ">
+          <img  src="pngwing.com (2).png"/> 
 
           </div>
         </div>

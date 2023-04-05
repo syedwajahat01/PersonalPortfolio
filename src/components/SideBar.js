@@ -86,7 +86,7 @@ export const SideBar = () => {
                     className="txt-decoration list nav-link active"
                     aria-current="page"
                   >
-                  <span className="licolor">Certificates & Training</span>
+                  <span className="licolor">Certificate & Achievement</span>
                     
                   </Link>
                 </span>
@@ -103,8 +103,6 @@ export const SideBar = () => {
                   </Link>
                 </span>
               </li>
-
-              
             </ul>
           </div>
         </div>

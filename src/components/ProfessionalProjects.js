@@ -7,7 +7,7 @@ export const ProfessionalProjects = () => {
       <div className="ms-5 mt-4 education">
         <h3 className="subheading">
           Criterion Tech.
-          <span style={{ marginLeft: "49rem", fontSize: "12px" }}>
+          <span className="criterionyear">
             09/2022 - Present
           </span>
         </h3>
@@ -46,9 +46,9 @@ export const ProfessionalProjects = () => {
 
       <div className="ms-5 mt-4 education">
         <h3 className="subheading">
-          Tata Consultancy Services(TCS){" "}
-          <span style={{ marginLeft: "35.7rem", fontSize: "12px" }}>
-            04/2021 - 08-2022
+          Tata Consultancy Services(TCS)
+          <span className="tcsyear">
+            04/2021 - 08/2022
           </span>
         </h3>
         <h6 className="subheading">Project: Client-Dupont (U.S)</h6>
