@@ -45,10 +45,10 @@ export const Contact = () => {
       });
   };
   return (
-    <div className=" homepage ">
+    <div className="homepage ">
       <div className="heading text-center">Contact Us</div>
-      <div className='row'>
-      <div className='col-7'>
+      <div className='row margin0rem' id='maincontact' style={{display:'flex'}}>
+      <div className='emailbox col-6 margin0rem'>
       <form className="mt-3 contact-us card" ref={form} onSubmit={sendEmail}>
           <label className="maillable" style={{fontSize:'22px'}}>Get In Touch</label>
 
@@ -68,28 +68,27 @@ export const Contact = () => {
           <Button className="mt-4 btn-send" type="submit" value="Send" variant="contained" > <ForwardToInboxRoundedIcon/></Button>
           
         </form>
-        
-       
-
       </div>
       
-      <div className='col-5'>
+      <div className=' addressbox col-6 margin0rem'>
         <h1 className='address'>Address</h1>
         <div className='addresscontent '>Badrinath Road, GolaGanj <br/></div>
         <div className='addresscontent '>Lucknow, Uttar Pradesh, India.<br/></div>
         <div className='addresscontent '>Pin No:226018<br/></div>
-        <div className='addresscontent '><CallRoundedIcon /> +91 639169 4444<br/></div>
-        <div className='addresscontent '><MailRoundedIcon /> @syedwajahathusainabdi01@gmail.com <br/></div>
+        <div className='addresscontent '><CallRoundedIcon />+91 639169 4444<br/></div>
+        <div className='addresscontent' style={{display:'flex'}}><MailRoundedIcon/><span>syedwajahathusainabdi01@gmail.com</span></div>
         <div className="socialIcon" >
           <a className="icondeco me-2" href="https://www.instagram.com/theonlywajahat/" target='_blank' rel="noopener noreferrer"> <span ><InstagramIcon /> </span> </a>
           <a className="icondeco me-2" href="https://www.linkedin.com/in/syed-wajahat-husain-abdi-365259202/" target='_blank' rel="noopener noreferrer"> <span ><LinkedInIcon /></span></a>
           <a className="icondeco" href="https://github.com/syedwajahat01/" target='_blank' rel="noopener noreferrer"> <span ><GitHubIcon /></span> </a>
+          
         </div>
+        <span className='copyright'>Copyright© 2023 Wajahat.</span>
+      </div>
 
       </div>
-      </div>
 
-      <div className='copyright'>Copyright © 2023 Wajahat. All Rights Reserved.</div>
+      
 
     <ToastContainer />
     

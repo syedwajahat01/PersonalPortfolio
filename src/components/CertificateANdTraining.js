@@ -2,7 +2,7 @@ import ArrowRightRoundedIcon from "@mui/icons-material/ArrowRightRounded";
 export const CertificateANdTraining = () => {
   return (
     <div className="homepage">
-      <div className="heading text-center">Certificate & Training</div>
+      <div className="heading text-center">Certificate & Achievement</div>
       <div className="ms-5 mt-4 education">
         <h5 className="subheading">Web Development Certificate.</h5>
         <ul className="txt-deco">
