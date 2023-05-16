@@ -5,34 +5,38 @@ import { Button } from "@material-ui/core";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import { About } from "./About";
-import { Education } from "./Education";
-import { PersonalProjects } from "./PersonalProjects";
-import { ProfessionalProjects } from "./ProfessionalProjects";
-import { CertificateANdTraining } from "./CertificateANdTraining";
-import { Contact } from "./Contact";
+// import { About } from "./About";
+// import { Education } from "./Education";
+// import { PersonalProjects } from "./PersonalProjects";
+// import { ProfessionalProjects } from "./ProfessionalProjects";
+// import { CertificateANdTraining } from "./CertificateANdTraining";
+// import { Contact } from "./Contact";
 export const Home = () => {
   return (
     <>
-      <div className="homepage">
+      
+      <div className="col-12 margin0rem homepagee">
         <div className="home row " id="homeMain" style={{display:'flex'}}>
 
-          <div className=" mt-5 txt col-6 margin0rem">
-            <h1 className="mainHeading ">
+          <div className=" mt-5 txt col-lg-6 col-md-6 col-sm-6 margin0rem">
+          <div style={{display: 'flex', marginLeft:'25px'}}>
+            <h1 className="mainHeading  marginl" >
               Hi, I'm
-              <span className="name ">Wajahat</span>
             </h1>
-            <p className="context txtanimation ">
+            <h1 className="name" > Wajahat</h1>
+          </div>
+            
+            <p className="context txtanimation  marginl mobileContext" >
               I Develop<br />Interactive User Interfaces & WebApps
             </p>
 
-            <div className="mt-4">
+            <div className="mt-4 " style={{marginLeft:'26px'}}>
               <a
-                className="btn-resume "
+                className="btn-resume " 
                 href="SyedWajahatHusainAbdiRESUME.pdf"
-                download="SyedWajahatHusainAbdiRESUME.pdf"
+                download="SyedWajahatHusainAbdiRESUME.pdf" 
               >
-                <Button id="downloadBtn" value="download">
+                <Button id="downloadBtn"  value="download">
                   <DownloadRoundedIcon />
                   Resume
                 </Button>
@@ -42,7 +46,7 @@ export const Home = () => {
             
           
 
-          <div className="homeSocialIcon">
+          <div className="homeSocialIcon" >
             <a
               className="icondeco me-2"
               href="https://www.instagram.com/theonlywajahat/"
@@ -80,19 +84,15 @@ export const Home = () => {
 
           </div>
 
-          <div className="mt-5 img col-6 margin0rem ">
-          <img  src="pngwing.com (2).png"/> 
+          <div className="mt-5 img col-lg-6 col-md-6 col-sm-6 margin0rem ">
+          <img className="setImage" src="personCoding.gif"/> 
 
           </div>
         </div>
-      </div>
+        </div>
+      
 
-      <About />
-      <Education />
-      <PersonalProjects />
-      <ProfessionalProjects />
-      <CertificateANdTraining />
-      <Contact />
+      
     </>
   );
 };

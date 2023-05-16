@@ -3,18 +3,34 @@
   margin: 0;
 }
 
+.margin0rem{
+  padding: 0;
+  margin: 0;
+}
+
 #maincontact{
   width: 100%;
 }
 #homeMain{
   width: 100%;
-}
+} 
 .nopadding {
   padding: 0 !important;
 }
-
+.homepagee{
+  background-color: #010101;
+  height: 100vh;
+}
 .home {
   display: flex;
+}
+.marginl{
+  margin-left: 20px;
+}
+.homeSocialIcon {
+  margin-top: 20px;
+  margin-left: 48px;
+  margin-top: 250px;
 }
 
 .licolor {
@@ -44,11 +60,12 @@
   color: #915EFF;
   font-weight: 800;
   font-size: 70px;
+  margin-top: -31px;
 }
 
 .context {
   color: whitesmoke;
-  margin-left: 25px;
+  margin-left: 51px;
   font-size: 30px;
 }
 
@@ -67,8 +84,9 @@
 }
 
 .p {
-  color: #9995B0;
+  color: #8DB4FF;
   margin-left: 25px;
+  font-weight: 500;
 }
 
 .heading {
@@ -79,7 +97,7 @@
 
 .txt-deco {
   list-style-type: none;
-  color: #9995B0;
+  color: #8DB4FF;
   text-decoration: none;
   font-weight: 600;
 }
@@ -106,11 +124,14 @@
 .education {
   color: #9995B0;
 }
-
+.edu{
+  margin-top:4rem;
+  margin-bottom: 5rem;
+}
 .year1 {
 
   font-size: 12px;
-  margin-left: 570px;
+  margin-left: 753px;
 }
 
 .year2 {
@@ -167,19 +188,16 @@
 
 .socialIcon {
   color: white;
-  margin-left: 20px;
 }
 
-
-
-.homeSocialIcon {
+.headingSocialIcon {
   margin-top: 208px;
   margin-left: 25px
 }
 
 .socialIcon {
-  bottom: 0px;
-  margin-top: 38px
+  
+  margin-top: 121px;
 }
 
 .icondeco {
@@ -206,6 +224,10 @@
   animation: type 4s steps(60, end);
 }
 
+
+
+  
+
 @keyframes type {
   from {
     width: 0;
@@ -227,7 +249,7 @@
     linear-gradient(to right,
       rgba(255, 0, 0, 1),
       rgba(255, 0, 180, 1),
-      rgba(0, 100, 200, 1));
+      rgb(0, 100, 200));
   background-size: 0 1px, 0 1px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
@@ -244,12 +266,12 @@
 }
 
 .addresscontent {
-  color: #915EFF;
+  color: #B3CDE0;
   margin-top: 15px;
 }
 
 .copyright {
-  color: #9995B0;
+  color: #B3CDE0;
   margin-top: 30px;
   
 }
@@ -268,11 +290,8 @@
 }
 /* Media Queries */
 
-@media (max-width: 786px) {}
-
-@media (max-width: 480px) {
-
-  .homepage {
+@media (max-width: 786px) {
+  .headingpage {
     height: 100vh;
   }
 
@@ -280,21 +299,25 @@
     .name {
       color: #915EFF;
       font-weight: 600;
-      font-size: 40px;
+      font-size: 45px;
+      margin-top: -18px;
+      margin-left: 10px;
     }
   
-  #homeMain.txt,.img {
-    width: 100%;
+ 
+  .setImage{
+    width: 290px;
+    margin-left: 59px;
+    height: auto;
   }
 
   .img{
-    
-    height: 200px;
+    height: auto;
   }
   .context {
     color: whitesmoke;
-    margin-left: 15px;
-    font-size: 20px;
+    margin-left: 37px;
+    font-size: 14px;
   }
 
   .mainHeading {
@@ -310,26 +333,159 @@
 
   .homeSocialIcon {
     margin-top: 20px;
-
+    margin-left: 37px;
+  }
+  .edu{
+    margin-top:7rem
   }
   .year1 {
-    margin-left: 20px;
+    margin-left: 28px;
   }
 
   .year2 {
-    margin-left: 20px;
+    margin-left: 41px;
   }
 
   .year3 {
-    margin-left: 20px;
+    margin-left: 51px;
   }
 
   .criterionyear {
-    margin-left: 20px;
+    margin-left: 65px;
+    font-size: 8px;
   }
 
   .tcsyear {
+    margin-left: 75px;
+    font-size: 8px;
+  }
+
+  .contact-us {
+    width: 20rem;
+    height: 360px;
     margin-left: 20px;
+    padding: 15px;
+    background-color: #F4C5B1;
+  }
+  
+  .mailfields {
+    width: 15rem;
+    background-color: #FBE4DA;
+    border-radius: 15px 7px;
+    margin-left: 20px;
+    color: #000;
+    border: #000 solid 2px
+  }
+  
+ 
+
+  .copyright {
+    color: #9995B0;
+    margin-top: 10px;
+    margin-left: 1rem;
+    display: flex;
+  }
+
+  .heading {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  .addresscontent {
+    color: #915EFF;
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+  .address {
+    margin-left: 20px;
+  }
+
+  .subheading {
+    margin-left: -20px;
+  }
+
+  .txt-deco{
+    font-size: 13px;
+    margin-left: -46px;
+  }
+  .socialIcon {
+    margin-left: 20px;
+    margin-top: 142px;
+}
+}
+
+@media (max-width: 480px) {
+
+  .headingpage {
+    height: 100vh;
+  }
+
+  
+    .name {
+      color: #915EFF;
+      font-weight: 600;
+      font-size: 45px;
+      margin-top: -18px;
+      margin-left: 10px;
+    }
+  
+  #homeMain .txt,.img {
+    width: 100%;
+  }
+  .setImage{
+    width: 290px;
+    margin-left: 59px;
+    height: auto;
+  }
+
+  .img{
+    height: auto;
+  }
+  .context {
+    color: whitesmoke;
+    margin-left: 37px;
+    font-size: 14px;
+  }
+
+  .mainHeading {
+    color: white;
+    margin-left: 10px;
+    display: flex;
+  
+  }
+
+  .btn-resume {
+    margin-left: 15px !important;
+  }
+
+  .homeSocialIcon {
+    margin-top: 20px;
+    margin-left: 37px;
+  }
+  .edu{
+    margin-top:7rem
+  }
+  .year1 {
+    margin-left: 28px;
+  }
+
+  .year2 {
+    margin-left: 41px;
+  }
+
+  .year3 {
+    margin-left: 51px;
+  }
+
+  .criterionyear {
+    margin-left: 65px;
+    font-size: 8px;
+  }
+
+  .tcsyear {
+    margin-left: 75px;
+    font-size: 8px;
   }
 
   .contact-us {
@@ -382,6 +538,9 @@
   .txt-deco{
     font-size: 13px;
     margin-left: -46px;
+  }
+  .socialIcon {
+    margin-left: 20px;
   }
 
 }
